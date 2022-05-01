@@ -3,12 +3,12 @@ bidding = False
 bids = {}
 
 
-def find_highest_bid(bids):
+def find_highest_bid(bids_list):
     high_bid = 0
     winner = ""
-    for bidder in bids:
-        if bids[bidder] > high_bid:
-            high_bid = bids[bidder]
+    for bidder in bids_list:
+        if bids_list[bidder] > high_bid:
+            high_bid = bids_list[bidder]
             winner = bidder
     print(f"winner is {winner} and bid is ${high_bid}")
 
